@@ -6,6 +6,7 @@
     --color-body: #918ca4;
     --color-border: #ccc;
     --border-radius: 30px;
+    --color-text: #fff;
   }
 
   *, *::after, *::before {
@@ -101,12 +102,12 @@
 
   .badge--primary {
     background: var(--color-primary);
-    color: #fff;
+    color: var(--color-text);
   }
 
   .badge--secondary {
     background: var(--color-secondary);
-    color: #fff;
+    color: var(--color-text);
   }
 
   .badge--small {
@@ -190,7 +191,7 @@
 
 .btn--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-text);
 }
 
 .btn--primary:hover {
@@ -199,7 +200,7 @@
 
   .btn--secondary {
     background: var(--color-secondary);
-    color: #fff;
+    color: var(--color-text);
   }
 
   .btn--secondary:hover {
@@ -208,7 +209,7 @@
 
   .btn--accent {
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-text);
   }
 
   .btn--accent:hover {
@@ -221,13 +222,13 @@
   }
 
   .btn--outline {
-    background: #fff;
+    background: var(--color-text);
     color: var(--color-headings);
     border: 2px solid --color-headings;
   }
 
   .btn--outline:hover {
-    background: #fff;
+    background: var(--color-text);
     color: var(--color-headings);
   }
 
@@ -271,4 +272,27 @@
     .input {
       font-size: 1.5rem;
     }
+  }
+
+  /* Cards */
+
+  .card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+  }
+
+  .card__header, .card__body {
+    padding: 2rem 3rem;
+
+  }
+
+  .card--primary .card__header {
+    background: var(--color-primary);
+    color: var(--color-text);
+  }
+
+  .card--secondary .card__header {
+    background: var(--color-secondary);
+    color: var(--color-text);
   }
